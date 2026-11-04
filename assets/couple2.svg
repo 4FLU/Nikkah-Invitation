@@ -1,0 +1,22 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="bg">
+   <stop stop-color="#073D32" offset="0%"/>
+   <stop stop-color="#0B5142" offset="50%"/>
+   <stop stop-color="#052B23" offset="100%"/>
+  </linearGradient>
+  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="gold">
+   <stop stop-color="#FDE68A" offset="0%"/>
+   <stop stop-color="#D6B56D" offset="50%"/>
+   <stop stop-color="#926D21" offset="100%"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" fill="url(#bg)" height="500" width="800"/>
+  <rect id="svg_2" opacity="0.6" stroke-width="1.5" stroke="url(#gold)" fill="none" rx="8" height="460" width="760" y="20" x="20"/>
+  <rect id="svg_3" opacity="0.4" stroke-dasharray="6,4" stroke-width="0.75" stroke="url(#gold)" fill="none" rx="6" height="440" width="740" y="30" x="30"/>
+  <text id="svg_4" text-anchor="middle" fill="url(#gold)" font-weight="bold" font-size="52" font-family="'Playfair Display', serif" y="231" x="400">Ashik &amp; Iza</text>
+  <text transform="matrix(1.05559 0 0 1.18762 -27.7421 -46.7377)" stroke="null" id="svg_5" text-anchor="middle" opacity="0.85" fill="#E8D8B5" font-size="28" font-family="'Amiri', serif" y="280" x="400">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</text>
+ </g>
+</svg>

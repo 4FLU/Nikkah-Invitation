@@ -1,0 +1,21 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073D32" />
+      <stop offset="50%" stop-color="#0B5142" />
+      <stop offset="100%" stop-color="#052B23" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D6B56D" />
+      <stop offset="100%" stop-color="#926D21" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" />
+  <rect x="20" y="20" width="760" height="460" rx="8" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.6" />
+  <rect x="30" y="30" width="740" height="440" rx="6" fill="none" stroke="url(#gold)" stroke-width="0.75" stroke-dasharray="6,4" opacity="0.4" />
+  <text x="400" y="230" font-family="'Playfair Display', serif" font-size="52" font-weight="bold" fill="url(#gold)" text-anchor="middle">Ashik &amp; Iza</text>
+  <text x="400" y="280" font-family="'Amiri', serif" font-size="28" fill="#E8D8B5" opacity="0.85" text-anchor="middle">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</text>
+  <text x="400" y="340" font-family="'Playfair Display', serif" font-size="16" letter-spacing="6" fill="#D6B56D" opacity="0.7" text-anchor="middle">THE NIKAH EXPERIENCE • 2026</text>
+</svg>
+
