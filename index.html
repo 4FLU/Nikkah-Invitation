@@ -1,0 +1,2104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>The Nikah Experience • Ashik &amp; Iza</title>
+  <meta name="description" content="You are cordially invited to celebrate the Nikah of Ashik and Iza. Saturday, 28th November 2026." />
+  <meta name="theme-color" content="#073D32" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── CSS Variables & Base Styles ───────────────────────── */
+    :root {
+      --primary: #073D32;
+      --secondary: #0B5142;
+      --gold: #D6B56D;
+      --gold-light: #F5E3A9;
+      --gold-dark: #B18A3C;
+      --champagne: #E8D8B5;
+      --ivory: #F8F4EA;
+      --dark: #10251F;
+      --font-serif: "Playfair Display", Georgia, serif;
+      --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+      --font-arabic: "Amiri", "Traditional Arabic", serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--ivory);
+      color: var(--dark);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    ::selection {
+      background-color: var(--gold);
+      color: var(--dark);
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--ivory);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 4px;
+    }
+
+    /* ─── Typography & Utilities ────────────────────────────── */
+    .font-serif { font-family: var(--font-serif); }
+    .font-sans { font-family: var(--font-sans); }
+    .font-arabic { font-family: var(--font-arabic); }
+
+    .gold-text {
+      background: linear-gradient(135deg, #D6B56D 0%, #FFF0B0 45%, #D6B56D 70%, #9D7426 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gold-gradient {
+      background: linear-gradient(135deg, #F5E3A9 0%, #D6B56D 50%, #B18A3C 100%);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(214, 181, 109, 0.22);
+    }
+
+    .glass-card-light {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(214, 181, 109, 0.25);
+    }
+
+    .islamic-pattern-bg {
+      background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D6B56D' stroke-width='0.5' opacity='0.15'%3E%3Cpath d='M40 0 L80 40 L40 80 L0 40Z'/%3E%3Cpath d='M40 10 L70 40 L40 70 L10 40Z'/%3E%3Cpath d='M40 20 L60 40 L40 60 L20 40Z'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
+
+    .section-padding {
+      padding-top: 5.5rem;
+      padding-bottom: 5.5rem;
+    }
+    @media (min-width: 768px) {
+      .section-padding {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+      }
+    }
+
+    /* ─── Scroll Reveal Animation System ───────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ─── Gold Dividers ─────────────────────────────────────── */
+    .gold-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      max-width: 320px;
+      margin: 18px auto;
+    }
+    .gold-divider::before,
+    .gold-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .gold-divider .diamond {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px rgba(214, 181, 109, 0.6);
+    }
+
+    /* ─── 3D ENVELOPE OVERLAY ──────────────────────────────── */
+    #envelope-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(ellipse at center, #104638 0%, #092F25 48%, #031711 100%);
+      overflow: hidden;
+      user-select: none;
+      transition: opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+    }
+    #envelope-overlay.hide-envelope {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    #particles-canvas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .ambient-glow {
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(214, 181, 109, 0.18) 0%, transparent 70%);
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .skip-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 50;
+      padding: 7px 18px;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      border: 1px solid rgba(214, 181, 109, 0.4);
+      color: #E5CD98;
+      background: rgba(7, 61, 50, 0.5);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .skip-btn:hover {
+      background: rgba(214, 181, 109, 0.15);
+      border-color: var(--gold);
+      color: #fff;
+    }
+
+    .envelope-header {
+      position: relative;
+      z-index: 20;
+      text-align: center;
+      margin-bottom: 24px;
+      padding: 0 16px;
+    }
+
+    .envelope-viewport {
+      position: relative;
+      z-index: 20;
+      perspective: 1600px;
+      padding: 10px;
+    }
+
+    .envelope-box {
+      position: relative;
+      width: min(460px, 90vw);
+      aspect-ratio: 1.52;
+      transform-style: preserve-3d;
+      transition: transform 0.1s ease-out;
+    }
+
+    .envelope-shadow {
+      position: absolute;
+      bottom: -32px;
+      left: 5%;
+      width: 90%;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.65);
+      filter: blur(18px);
+      transition: transform 0.8s ease, opacity 0.8s ease;
+    }
+
+    /* 1. Envelope Back */
+    .envelope-back {
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(145deg, #0B4939, #063629 45%, #04271F);
+      border: 1px solid rgba(214, 181, 109, 0.5);
+      box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.08), inset 0 -15px 30px rgba(0, 0, 0, 0.4), 0 25px 50px rgba(0, 0, 0, 0.6);
+    }
+    .envelope-back .silk-lining {
+      position: absolute;
+      inset: 8px;
+      border-radius: 8px;
+      background: radial-gradient(circle at 50% 25%, rgba(214, 181, 109, 0.3), transparent 70%);
+      opacity: 0.5;
+    }
+
+    /* 2. Invitation Card */
+    .envelope-card {
+      position: absolute;
+      inset: 12px 16px;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #FFFDF7, #F5EFE3 55%, #EEE5D5);
+      border: 1px solid #D6B56D;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      text-align: center;
+      transition: transform 1.5s cubic-bezier(0.2, 0.9, 0.25, 1), box-shadow 1.5s ease;
+      will-change: transform;
+    }
+    .envelope-card.slid-out {
+      transform: translateY(-106%);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55), 0 0 35px rgba(214, 181, 109, 0.35);
+    }
+
+    .card-border-outer {
+      position: absolute;
+      inset: 9px;
+      border: 1px solid rgba(198, 164, 91, 0.55);
+      border-radius: 4px;
+      pointer-events: none;
+    }
+    .card-border-inner {
+      position: absolute;
+      inset: 13px;
+      border: 1px solid rgba(198, 164, 91, 0.25);
+      border-radius: 3px;
+      pointer-events: none;
+    }
+
+    /* 3. Envelope Front Pocket (Sides + Bottom) */
+    .envelope-pocket {
+      position: absolute;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+    }
+    .pocket-left {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 0, 50% 55%, 0 100%);
+      background: linear-gradient(135deg, #0A4839, #07352A 65%, #04271F);
+      filter: drop-shadow(3px 0 7px rgba(0, 0, 0, 0.45));
+    }
+    .pocket-right {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(100% 0, 50% 55%, 100% 100%);
+      background: linear-gradient(225deg, #0A4839, #07352A 65%, #04271F);
+      filter: drop-shadow(-3px 0 7px rgba(0, 0, 0, 0.45));
+    }
+    .pocket-bottom {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 100%, 50% 45%, 100% 100%);
+      background: linear-gradient(180deg, #0C5141, #07372D 60%, #04271F);
+      filter: drop-shadow(0 -5px 12px rgba(0, 0, 0, 0.5));
+    }
+
+    /* 4. Top Flap with Real 3D Hinge */
+    .envelope-flap-hinge {
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 50%;
+      z-index: 30;
+      transform-origin: top center;
+      transform-style: preserve-3d;
+      transition: transform 1.25s cubic-bezier(0.45, 0, 0.15, 1);
+    }
+    .envelope-flap-hinge.open {
+      transform: rotateX(-180deg);
+    }
+
+    .flap-front {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background: linear-gradient(180deg, #0B493A, #0A4033 55%, #062D24);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+    }
+    .flap-back {
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background: linear-gradient(180deg, #E6D2A3, #A88B54);
+      transform: rotateY(180deg) rotateZ(180deg);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    /* 5. Realistic Royal Wax Seal */
+    .wax-seal {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -10%);
+      z-index: 40;
+      width: 76px;
+      height: 76px;
+      cursor: pointer;
+      transition: transform 0.3s ease, opacity 0.4s ease, filter 0.4s ease;
+    }
+    .wax-seal:hover {
+      transform: translate(-50%, -10%) scale(1.08);
+    }
+    .wax-seal.broken {
+      transform: translate(-50%, -10%) scale(1.35);
+      opacity: 0;
+      filter: blur(8px);
+      pointer-events: none;
+    }
+    .seal-pulse {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 1px solid rgba(214, 181, 109, 0.6);
+      animation: pulseGlow 2.4s infinite ease-in-out;
+      pointer-events: none;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.6; }
+      50% { transform: scale(1.18); opacity: 0.1; }
+    }
+
+    /* Envelope Open Action Button */
+    .envelope-action {
+      position: relative;
+      z-index: 30;
+      margin-top: 36px;
+      text-align: center;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .envelope-action.hide-action {
+      opacity: 0;
+      transform: translateY(15px);
+      pointer-events: none;
+    }
+
+    .open-btn {
+      position: relative;
+      display: inline-block;
+      padding: 14px 40px;
+      border-radius: 999px;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #26301F;
+      background: linear-gradient(135deg, #F5E3A9, #C6A45B, #E8D08E);
+      border: 1px solid #F4D98D;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(214, 181, 109, 0.3);
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .open-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 35px rgba(214, 181, 109, 0.5);
+    }
+    .open-btn:active {
+      transform: scale(0.97);
+    }
+    .open-btn::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+      transform: skewX(-20deg);
+      animation: btnShimmer 3s infinite linear;
+    }
+    @keyframes btnShimmer {
+      0% { left: -100%; }
+      50%, 100% { left: 200%; }
+    }
+
+    .envelope-status-msg {
+      margin-top: 18px;
+      font-size: 13px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-style: italic;
+      font-family: var(--font-serif);
+      min-height: 24px;
+    }
+
+    /* ─── MAIN WEBSITE LAYOUT ──────────────────────────────── */
+    #main-content {
+      position: relative;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    #main-content.visible {
+      opacity: 1;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── Hero / Welcome Section ───────────────────────────── */
+    #welcome {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--ivory);
+      overflow: hidden;
+      padding: 80px 20px;
+    }
+    .hero-radial-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(214, 181, 109, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .bismillah-title {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.5;
+      color: rgba(16, 37, 31, 0.95);
+      margin-bottom: 6px;
+    }
+
+    .couple-hero-name {
+      font-size: clamp(2.6rem, 7vw, 4.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+
+    .ampersand-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 12px 0;
+    }
+    .ampersand-wrap .line {
+      width: 36px;
+      height: 1px;
+      background: rgba(214, 181, 109, 0.5);
+    }
+    .ampersand-wrap .amp {
+      font-size: 1.8rem;
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .scroll-indicator {
+      margin-top: 48px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      color: rgba(16, 37, 31, 0.45);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .scroll-indicator:hover {
+      color: var(--gold);
+    }
+    .scroll-indicator svg {
+      animation: bounceDown 2s infinite ease-in-out;
+      margin-top: 6px;
+    }
+    @keyframes bounceDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    /* ─── Meet the Couple Section ──────────────────────────── */
+    #couple {
+      position: relative;
+      background: linear-gradient(180deg, #F8F4EA 0%, #E8D8B5 100%);
+    }
+
+    .couple-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 36px;
+      margin-bottom: 50px;
+    }
+    @media (min-width: 768px) {
+      .couple-grid {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 50px;
+      }
+    }
+
+    .person-card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(214, 181, 109, 0.25);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      max-width: 380px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    }
+    .person-photo-frame {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #F5E3A9, #D6B56D, #B18A3C);
+      box-shadow: 0 10px 25px rgba(214, 181, 109, 0.3);
+    }
+    .person-photo-frame img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .couple-center-divider {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      .couple-center-divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+      .couple-center-divider .v-line {
+        width: 1px;
+        height: 60px;
+        background: rgba(214, 181, 109, 0.4);
+      }
+      .couple-center-divider .center-amp {
+        font-size: 1.6rem;
+        color: var(--gold);
+        font-style: italic;
+      }
+    }
+
+    .couple-story-box {
+      max-width: 680px;
+      margin: 30px auto 0;
+      text-align: center;
+      padding: 24px;
+    }
+    .quote-mark {
+      font-size: 3.5rem;
+      line-height: 1;
+      color: rgba(214, 181, 109, 0.35);
+      font-family: var(--font-serif);
+      display: block;
+    }
+
+    .couple-banner-photo {
+      max-width: 680px;
+      margin: 40px auto 0;
+      border-radius: 20px;
+      padding: 4px;
+      background: linear-gradient(135deg, #F5E3A9, #D6B56D, #B18A3C);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    .couple-banner-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+    }
+
+    /* ─── Countdown Section ────────────────────────────────── */
+    #countdown {
+      position: relative;
+      background-color: var(--primary);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    .countdown-boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      max-width: 800px;
+      margin: 40px auto 0;
+    }
+    @media (min-width: 768px) {
+      .countdown-boxes {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 22px;
+      }
+    }
+
+    .count-box {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(214, 181, 109, 0.22);
+      border-radius: 20px;
+      padding: 28px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.4s ease, transform 0.4s ease;
+    }
+    .count-box:hover {
+      border-color: rgba(214, 181, 109, 0.5);
+      transform: translateY(-4px);
+    }
+    .count-num {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1;
+      font-family: var(--font-serif);
+    }
+    .count-label {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      opacity: 0.8;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    /* ─── Schedule Timeline Section ────────────────────────── */
+    #schedule {
+      position: relative;
+      background-color: var(--ivory);
+    }
+
+    .timeline-wrap {
+      position: relative;
+      max-width: 860px;
+      margin: 50px auto 0;
+      padding-top: 10px;
+    }
+    .timeline-line-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 18px;
+      width: 2px;
+      background: rgba(214, 181, 109, 0.2);
+    }
+    .timeline-line-fill {
+      position: absolute;
+      top: 0;
+      left: 18px;
+      width: 2px;
+      height: 0%;
+      background: linear-gradient(180deg, #D6B56D, #F5E3A9, #D6B56D);
+      transition: height 0.3s ease-out;
+    }
+    @media (min-width: 768px) {
+      .timeline-line-bg,
+      .timeline-line-fill {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: flex-start;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: 10px;
+      top: 22px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 14px rgba(214, 181, 109, 0.7);
+      z-index: 5;
+    }
+    @media (min-width: 768px) {
+      .timeline-dot {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .timeline-card {
+      margin-left: 48px;
+      width: calc(100% - 48px);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(214, 181, 109, 0.22);
+      border-radius: 20px;
+      padding: 26px 28px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+      transition: all 0.4s ease;
+    }
+    .timeline-card:hover {
+      border-color: rgba(214, 181, 109, 0.5);
+      box-shadow: 0 10px 30px rgba(214, 181, 109, 0.12);
+      transform: translateY(-3px);
+    }
+    @media (min-width: 768px) {
+      .timeline-item:nth-child(odd) .timeline-card {
+        margin-left: 0;
+        margin-right: calc(50% + 32px);
+        width: calc(50% - 32px);
+      }
+      .timeline-item:nth-child(even) .timeline-card {
+        margin-left: calc(50% + 32px);
+        margin-right: 0;
+        width: calc(50% - 32px);
+      }
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+    .badge-gold {
+      background: rgba(214, 181, 109, 0.18);
+      color: var(--gold-dark);
+    }
+    .badge-primary {
+      background: rgba(7, 61, 50, 0.1);
+      color: var(--primary);
+    }
+
+    /* ─── Locations & Venues Section ───────────────────────── */
+    #venue {
+      position: relative;
+      background: linear-gradient(180deg, #E8D8B5 0%, #F8F4EA 100%);
+    }
+
+    .venues-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: 768px) {
+      .venues-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .venue-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(214, 181, 109, 0.28);
+      border-radius: 20px;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .btn-gold-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--dark);
+      background: linear-gradient(135deg, #F5E3A9, #D6B56D, #B18A3C);
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(214, 181, 109, 0.3);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-gold-action:hover {
+      box-shadow: 0 6px 20px rgba(214, 181, 109, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .map-frame {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(214, 181, 109, 0.35);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      height: 380px;
+    }
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* ─── Closing Section ──────────────────────────────────── */
+    #closing {
+      position: relative;
+      background-color: var(--primary);
+      color: #fff;
+      text-align: center;
+    }
+
+    .closing-badge {
+      display: inline-block;
+      padding: 16px 36px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(214, 181, 109, 0.25);
+      backdrop-filter: blur(16px);
+      margin-top: 30px;
+    }
+
+    /* ─── Floating Music Player ────────────────────────────── */
+    #music-player-wrap {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+    }
+
+    .music-controls-panel {
+      display: none;
+      background: rgba(7, 61, 50, 0.95);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(214, 181, 109, 0.3);
+      border-radius: 18px;
+      padding: 16px 20px;
+      min-width: 170px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .music-controls-panel.show {
+      display: flex;
+      animation: fadeIn 0.25s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .btn-panel-action {
+      background: none;
+      border: none;
+      color: var(--champagne);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .btn-panel-action:hover {
+      color: var(--gold);
+    }
+
+    .volume-slider {
+      width: 100%;
+      height: 4px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      outline: none;
+      cursor: pointer;
+    }
+    .volume-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--gold);
+      cursor: pointer;
+    }
+
+    .music-buttons-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-music-toggle-panel {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(7, 61, 50, 0.85);
+      border: 1px solid rgba(214, 181, 109, 0.35);
+      backdrop-filter: blur(10px);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .btn-music-toggle-panel:hover {
+      transform: scale(1.08);
+      background: rgba(7, 61, 50, 1);
+    }
+
+    .btn-music-main {
+      position: relative;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #073D32, #0B5142);
+      border: 2px solid rgba(214, 181, 109, 0.55);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-music-main:hover {
+      transform: scale(1.06);
+      box-shadow: 0 0 25px rgba(214, 181, 109, 0.4);
+    }
+    .btn-music-main .ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid rgba(214, 181, 109, 0.5);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .btn-music-main.playing .ring {
+      animation: pulseGlow 2.2s infinite ease-in-out;
+      opacity: 1;
+    }
+
+    /* ─── Toast Notification ───────────────────────────────── */
+    #toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(50px);
+      background: rgba(7, 61, 50, 0.95);
+      border: 1px solid var(--gold);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 999px;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+      z-index: 10000;
+    }
+    #toast.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Audio Element -->
+  <audio id="wedding-audio" loop preload="auto">
+    <source src="assets/wedding-audio.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ════════════════════════════════════════════════════════════
+       3D REALISTIC INVITATION ENVELOPE OVERLAY
+       ════════════════════════════════════════════════════════════ -->
+  <div id="envelope-overlay">
+    <!-- Canvas for floating gold sparkles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Ambient backlight glow -->
+    <div class="ambient-glow"></div>
+
+    <!-- Skip Button -->
+    <button class="skip-btn" id="skip-btn" aria-label="Skip invitation intro">Skip</button>
+
+    <!-- Header Arabic Inscription -->
+    <div class="envelope-header">
+      <p class="font-arabic gold-text" style="font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 4px;">
+        بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+      </p>
+      <p style="font-size: 11px; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(232, 216, 181, 0.65);">
+        The Wedding Invitation
+      </p>
+    </div>
+
+    <!-- 3D Envelope Container with Mouse/Touch Perspective -->
+    <div class="envelope-viewport" id="envelope-viewport">
+      <div class="envelope-box" id="envelope-box">
+
+        <!-- Ground drop shadow -->
+        <div class="envelope-shadow" id="envelope-shadow"></div>
+
+        <!-- 1. Envelope Back Panel -->
+        <div class="envelope-back">
+          <div class="silk-lining"></div>
+        </div>
+
+        <!-- 2. Invitation Card Inside Pocket -->
+        <div class="envelope-card" id="envelope-card">
+          <div class="card-border-outer"></div>
+          <div class="card-border-inner"></div>
+
+          <div>
+            <p class="font-arabic" style="font-size: 19px; font-weight: 700; color: var(--primary);">
+              بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+            </p>
+            <div style="width: 60px; height: 1px; background: linear-gradient(90deg, transparent, #C6A45B, transparent); margin: 6px auto;"></div>
+            <p style="font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: #625D50; font-weight: 500;">
+              The Nikah Ceremony
+            </p>
+          </div>
+
+          <div style="margin: 8px 0;">
+            <h3 class="font-serif" style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; color: var(--primary); line-height: 1.15;">
+              Ashik
+            </h3>
+            <p class="font-serif" style="font-size: 15px; font-style: italic; color: #B18A3C; margin: 3px 0;">&amp;</p>
+            <h3 class="font-serif" style="font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; color: var(--primary); line-height: 1.15;">
+              Iza
+            </h3>
+          </div>
+
+          <div>
+            <div style="width: 80px; height: 1px; background: linear-gradient(90deg, transparent, #C6A45B, transparent); margin: 6px auto;"></div>
+            <p class="font-serif" style="font-size: 12px; font-weight: 600; color: #514839;">
+              Saturday, 28th November 2026
+            </p>
+            <p style="font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: #625D50; margin-top: 3px;">
+              3:30 PM • Nikah Ceremony
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Envelope Front Pocket -->
+        <div class="envelope-pocket">
+          <div class="pocket-left"></div>
+          <div class="pocket-right"></div>
+          <div class="pocket-bottom"></div>
+          <!-- Fold gold seam piping -->
+          <svg style="position: absolute; inset: 0; width: 100%; height: 100%;" viewBox="0 0 100 66" preserveAspectRatio="none">
+            <path d="M0 66 L50 29.7 L100 66" stroke="#D6B56D" stroke-width="0.45" opacity="0.75" fill="none"></path>
+          </svg>
+        </div>
+
+        <!-- 4. Top Flap with 3D Hinge -->
+        <div class="envelope-flap-hinge" id="envelope-flap">
+          <div class="flap-front">
+            <svg style="width: 100%; height: 100%;" viewBox="0 0 100 50" preserveAspectRatio="none">
+              <path d="M0 0 L50 50 L100 0" fill="none" stroke="#D6B56D" stroke-width="0.55" opacity="0.8"></path>
+            </svg>
+          </div>
+          <div class="flap-back"></div>
+        </div>
+
+        <!-- 5. Realistic Royal Wax Seal (Clickable) -->
+        <div class="wax-seal" id="wax-seal" title="Click to open invitation">
+          <div class="seal-pulse"></div>
+          <svg viewBox="0 0 100 100" style="width: 100%; height: 100%; filter: drop-shadow(0 7px 9px rgba(0,0,0,0.6));">
+            <defs>
+              <radialGradient id="waxGrad" cx="35%" cy="28%" r="75%">
+                <stop offset="0%" stop-color="#E34A42"></stop>
+                <stop offset="40%" stop-color="#B91C1C"></stop>
+                <stop offset="80%" stop-color="#7F1414"></stop>
+                <stop offset="100%" stop-color="#430909"></stop>
+              </radialGradient>
+              <linearGradient id="crestGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF0B0"></stop>
+                <stop offset="50%" stop-color="#D6B56D"></stop>
+                <stop offset="100%" stop-color="#8D6423"></stop>
+              </linearGradient>
+            </defs>
+
+            <!-- Organic wax melt contours -->
+            <path d="M50 6 C63 5 74 11 82 20 C91 29 97 42 94 54 C92 67 84 77 75 85 C65 93 52 95 40 94 C28 92 17 85 10 75 C3 64 4 50 8 38 C13 24 23 13 36 8 Z" fill="url(#waxGrad)"></path>
+            <circle cx="50" cy="50" r="37" fill="url(#waxGrad)"></circle>
+            <circle cx="50" cy="50" r="34" fill="none" stroke="url(#crestGold)" stroke-width="1.5"></circle>
+            <circle cx="50" cy="50" r="30" fill="none" stroke="#E8C879" stroke-width="0.7" stroke-dasharray="2 2"></circle>
+            <!-- Crescent ornament -->
+            <path d="M48 17 A8 8 0 1 0 56 31 A10 10 0 1 1 48 17" fill="url(#crestGold)"></path>
+            <!-- Stamped Monogram A & I -->
+            <text x="50" y="66" font-family="'Playfair Display', serif" font-size="17" font-weight="bold" text-anchor="middle" fill="url(#crestGold)">
+              A &amp; I
+            </text>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Open Invitation Button & Status -->
+    <div class="envelope-action" id="envelope-action">
+      <button class="open-btn" id="open-btn">
+        Open Invitation
+      </button>
+      <p style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(232, 216, 181, 0.65); margin-top: 10px;">
+        Tap wax seal or button to open
+      </p>
+      <div class="envelope-status-msg" id="envelope-status"></div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       MAIN WEBSITE CONTENT
+       ════════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─── 1. Welcome / Hero Section ──────────────────────── -->
+    <section id="welcome" class="islamic-pattern-bg">
+      <div class="hero-radial-glow"></div>
+      <div class="container" style="position: relative; z-index: 10; max-width: 800px;">
+        <div class="reveal">
+          <p class="font-arabic bismillah-title">
+            بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+          </p>
+          <p style="font-size: 13px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(16, 37, 31, 0.55); font-weight: 500;">
+            In the name of Allah, the Most Gracious, the Most Merciful
+          </p>
+        </div>
+
+        <div class="gold-divider reveal">
+          <div class="diamond"></div>
+        </div>
+
+        <div class="reveal">
+          <p style="font-size: 16px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(16, 37, 31, 0.65); font-weight: 400;">
+            Together with our families
+          </p>
+          <p style="font-size: 17px; line-height: 1.8; color: rgba(16, 37, 31, 0.75); margin: 12px auto 0; max-width: 580px; font-weight: 300;">
+            With the blessings of Almighty Allah, we cordially invite you to honor us with your gracious presence and prayers at the Nikah of
+          </p>
+        </div>
+
+        <div class="reveal" style="margin-top: 28px;">
+          <h1 class="font-serif couple-hero-name gold-text">Ashik</h1>
+          <div class="ampersand-wrap">
+            <span class="line"></span>
+            <span class="amp">&amp;</span>
+            <span class="line"></span>
+          </div>
+          <h1 class="font-serif couple-hero-name gold-text">Iza</h1>
+        </div>
+
+        <div class="gold-divider reveal">
+          <div class="diamond"></div>
+        </div>
+
+        <div class="reveal">
+          <p style="font-size: 16px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(16, 37, 31, 0.75); font-weight: 500;">
+            Saturday, 28th November 2026
+          </p>
+        </div>
+
+        <div class="reveal">
+          <a href="#couple" class="scroll-indicator">
+            <span style="font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;">Scroll</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── 2. Meet the Couple Section ─────────────────────── -->
+    <section id="couple" class="section-padding islamic-pattern-bg">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+          <h2 class="font-serif" style="font-size: clamp(2.2rem, 5vw, 3.2rem); color: rgba(16, 37, 31, 0.95);">
+            The Couple
+          </h2>
+          <div class="gold-divider">
+            <div class="diamond"></div>
+          </div>
+        </div>
+
+        <!-- Couple Cards Grid -->
+        <div class="couple-grid">
+          <!-- Bride Card -->
+          <div class="person-card reveal-left">
+            <div class="person-photo-frame">
+              <img src="assets/bride.svg" alt="Ashik - The Bride" />
+            </div>
+            <h3 class="font-serif gold-text" style="font-size: 1.85rem; font-weight: 700; margin-bottom: 6px;">
+              Ashik
+            </h3>
+            <p style="font-size: 13px; color: rgba(16, 37, 31, 0.55); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">
+              The Bride
+            </p>
+            <p style="font-size: 15px; color: rgba(16, 37, 31, 0.75); font-style: italic;">
+              &ldquo;A soul full of grace and kindness, stepping into a lifetime of blessings.&rdquo;
+            </p>
+          </div>
+
+          <!-- Desktop Center Ampersand -->
+          <div class="couple-center-divider reveal">
+            <span class="v-line"></span>
+            <span class="center-amp font-serif">&amp;</span>
+            <span class="v-line"></span>
+          </div>
+
+          <!-- Groom Card -->
+          <div class="person-card reveal-right">
+            <div class="person-photo-frame">
+              <img src="assets/groom.svg" alt="Iza - The Groom" />
+            </div>
+            <h3 class="font-serif gold-text" style="font-size: 1.85rem; font-weight: 700; margin-bottom: 6px;">
+              Iza
+            </h3>
+            <p style="font-size: 13px; color: rgba(16, 37, 31, 0.55); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px;">
+              The Groom
+            </p>
+            <p style="font-size: 15px; color: rgba(16, 37, 31, 0.75); font-style: italic;">
+              &ldquo;A heart devoted to faith and love, embarking on a sacred covenant.&rdquo;
+            </p>
+          </div>
+        </div>
+
+        <!-- Couple Story Quote -->
+        <div class="couple-story-box reveal">
+          <span class="quote-mark">&ldquo;</span>
+          <p style="font-size: clamp(1rem, 2.5vw, 1.2rem); font-style: italic; color: rgba(16, 37, 31, 0.75); line-height: 1.8;">
+            Two souls united in faith, love, and the divine blessing of Allah. Bound together by prayer, patience, and the promise of a lifetime.
+          </p>
+          <span class="quote-mark" style="transform: rotate(180deg); display: inline-block;">&ldquo;</span>
+        </div>
+
+        <!-- Couple Photo Banner -->
+        <div class="couple-banner-photo reveal">
+          <img src="assets/couple.svg" alt="Ashik &amp; Iza" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── 3. Countdown Timer Section ─────────────────────── -->
+    <section id="countdown" class="section-padding islamic-pattern-bg">
+      <div class="container">
+        <div class="reveal">
+          <!-- Crescent Moon & Star SVG -->
+          <div style="margin-bottom: 16px;">
+            <svg width="36" height="36" viewBox="0 0 40 40" fill="var(--gold)" style="margin: 0 auto; display: block; opacity: 0.9;">
+              <path d="M25 5a15 15 0 1 0 0 30 15 15 0 0 1 0-30z"></path>
+              <circle cx="28" cy="8" r="2.5"></circle>
+            </svg>
+          </div>
+
+          <h2 class="font-serif gold-text" style="font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700;">
+            Counting the Days
+          </h2>
+          <p class="font-serif" style="font-size: 1.1rem; color: var(--champagne); font-style: italic; margin-top: 8px; opacity: 0.85;">
+            Until we become one
+          </p>
+          <div class="gold-divider">
+            <div class="diamond"></div>
+          </div>
+        </div>
+
+        <!-- Four Countdown Boxes -->
+        <div class="countdown-boxes reveal" id="countdown-grid">
+          <div class="count-box">
+            <div class="count-num gold-text" id="cd-days">00</div>
+            <div class="count-label">Days</div>
+          </div>
+          <div class="count-box">
+            <div class="count-num gold-text" id="cd-hours">00</div>
+            <div class="count-label">Hours</div>
+          </div>
+          <div class="count-box">
+            <div class="count-num gold-text" id="cd-minutes">00</div>
+            <div class="count-label">Minutes</div>
+          </div>
+          <div class="count-box">
+            <div class="count-num gold-text" id="cd-seconds">00</div>
+            <div class="count-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-top: 36px;">
+          <p style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--champagne); opacity: 0.6;">
+            Target: Saturday, 28th November 2026 • 3:30 PM
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── 4. Wedding Schedule Section ────────────────────── -->
+    <section id="schedule" class="section-padding">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 20px;">
+          <p style="font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin-bottom: 6px;">
+            The Auspicious Occasions
+          </p>
+          <h2 class="font-serif" style="font-size: clamp(2.2rem, 5vw, 3.2rem); color: rgba(16, 37, 31, 0.95);">
+            Wedding Events
+          </h2>
+          <h3 class="font-serif gold-text" style="font-size: 1.8rem; font-weight: 600;">
+            Schedule
+          </h3>
+          <div class="gold-divider">
+            <div class="diamond"></div>
+          </div>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline-wrap" id="timeline-wrap">
+          <div class="timeline-line-bg"></div>
+          <div class="timeline-line-fill" id="timeline-progress"></div>
+
+          <!-- Event 1: Nikah Ceremony -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                <span class="badge badge-gold">Saturday, 28 Nov 2026</span>
+                <span class="badge badge-primary">03:30 PM</span>
+              </div>
+              <h3 class="font-serif" style="font-size: 1.5rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">
+                Nikah Ceremony
+              </h3>
+              <p style="font-size: 15px; color: rgba(16, 37, 31, 0.72); line-height: 1.7; margin-bottom: 18px;">
+                The sacred wedding ceremony and marriage covenant.
+              </p>
+              <div style="padding-top: 14px; border-top: 1px solid rgba(214, 181, 109, 0.2); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: rgba(16, 37, 31, 0.85);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Nikah Ceremony Venue</span>
+                </div>
+                <a href="https://maps.app.goo.gl/Qw6s1ua3V65fbyzB6" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: var(--gold-dark); text-decoration: none;">
+                  <span>Directions</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2: Wedding Reception -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+                <span class="badge badge-gold">Sunday, 29 Nov 2026</span>
+                <span class="badge badge-primary">12:30 PM</span>
+              </div>
+              <h3 class="font-serif" style="font-size: 1.5rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">
+                Wedding Reception
+              </h3>
+              <p style="font-size: 15px; color: rgba(16, 37, 31, 0.72); line-height: 1.7; margin-bottom: 18px;">
+                Celebration and feast held with warmth at Groom&apos;s Residence.
+              </p>
+              <div style="padding-top: 14px; border-top: 1px solid rgba(214, 181, 109, 0.2); display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; color: rgba(16, 37, 31, 0.85);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>At Groom&apos;s Residence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── 5. Locations & Venues Section ────────────────────── -->
+    <section id="venue" class="section-padding islamic-pattern-bg">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+          <h2 class="font-serif gold-text" style="font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 700;">
+            Locations &amp; Venues
+          </h2>
+          <div class="gold-divider">
+            <div class="diamond"></div>
+          </div>
+        </div>
+
+        <!-- Venue Cards Grid -->
+        <div class="venues-grid">
+          <!-- Card 1: Nikah Venue -->
+          <div class="venue-card reveal-left">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <span style="padding: 6px 12px; border-radius: 999px; background: rgba(214,181,109,0.2); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; color: var(--gold-dark);">
+                  Ceremony
+                </span>
+              </div>
+              <h3 class="font-serif" style="font-size: 1.65rem; font-weight: 700; color: var(--dark); margin-bottom: 6px;">
+                Nikah Location
+              </h3>
+              <p style="font-size: 14px; color: rgba(16, 37, 31, 0.7); margin-bottom: 4px;">
+                Saturday, 28th November 2026 at 3:30 PM
+              </p>
+              <p style="font-size: 13px; color: rgba(16, 37, 31, 0.6); margin-bottom: 24px;">
+                Click below for real-time navigation to the Nikah ceremony location.
+              </p>
+            </div>
+            <a href="https://maps.app.goo.gl/Qw6s1ua3V65fbyzB6" target="_blank" rel="noopener noreferrer" class="btn-gold-action">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Open in Google Maps</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Reception Venue -->
+          <div class="venue-card reveal-right">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <span style="padding: 6px 12px; border-radius: 999px; background: rgba(7,61,50,0.1); font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; color: var(--primary);">
+                  Reception
+                </span>
+              </div>
+              <h3 class="font-serif" style="font-size: 1.65rem; font-weight: 700; color: var(--dark); margin-bottom: 6px;">
+                At Groom&apos;s Residence
+              </h3>
+              <p style="font-size: 14px; color: rgba(16, 37, 31, 0.7); margin-bottom: 4px;">
+                Sunday, 29th November 2026 at 12:30 PM
+              </p>
+              <p style="font-size: 13px; color: rgba(16, 37, 31, 0.6); margin-bottom: 24px;">
+                Join us to celebrate the joyous union at the groom&apos;s residence.
+              </p>
+            </div>
+            <div style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 12px 24px; border-radius: 999px; font-weight: 600; font-size: 14px; color: var(--primary); background: rgba(7,61,50,0.08); border: 1px solid rgba(7,61,50,0.18);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span>At Groom&apos;s Residence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Map for Nikah Location -->
+        <div class="reveal">
+          <div style="text-align: center; margin-bottom: 14px;">
+            <p class="font-serif" style="font-size: 1.15rem; font-weight: 600; color: rgba(16, 37, 31, 0.85);">
+              Ceremony Location Preview
+            </p>
+          </div>
+          <div class="map-frame">
+            <iframe 
+              src="https://www.google.com/maps?q=11.1611,75.9868&amp;hl=en&amp;z=15&amp;output=embed" 
+              title="Nikah Ceremony Location Map" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ─── 6. Closing / Blessings Section ──────────────────── -->
+    <section id="closing" class="section-padding islamic-pattern-bg">
+      <div class="container" style="max-width: 720px;">
+        <div class="reveal">
+          <!-- Crescent Moon & Star -->
+          <div style="margin-bottom: 20px;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="var(--gold)" style="margin: 0 auto; display: block; opacity: 0.95;">
+              <path d="M25 5a15 15 0 1 0 0 30 15 15 0 0 1 0-30z"></path>
+              <circle cx="28" cy="8" r="2.5"></circle>
+            </svg>
+          </div>
+
+          <!-- Arabic Dua -->
+          <p class="font-arabic" style="font-size: clamp(1.8rem, 4.5vw, 2.5rem); line-height: 1.8; color: var(--gold); margin-bottom: 14px;" dir="rtl">
+            رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+          </p>
+
+          <!-- Dua Translation -->
+          <p class="font-serif" style="font-size: clamp(0.95rem, 2vw, 1.1rem); font-style: italic; color: var(--champagne); opacity: 0.85; line-height: 1.8; margin-bottom: 24px;">
+            &ldquo;Our Lord, grant us from among our spouses and offspring comfort to our eyes and make us an example for the righteous.&rdquo;
+          </p>
+
+          <div class="gold-divider">
+            <div class="diamond"></div>
+          </div>
+
+          <!-- Closing Invitation Note -->
+          <p style="font-size: 16px; color: rgba(248, 244, 234, 0.9); line-height: 1.9; margin: 24px 0 32px; font-weight: 300;">
+            Your heartfelt prayers and warm wishes are the greatest gift you can bestow upon us. We humbly request your Duas for a blessed union filled with love, tranquility, and endless Barakah.
+          </p>
+
+          <!-- Couple Badge -->
+          <div class="closing-badge">
+            <p class="font-serif gold-text" style="font-size: 1.7rem; font-weight: 700;">
+              Ashik &amp; Iza
+            </p>
+            <p style="font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--champagne); opacity: 0.7; margin-top: 4px;">
+              We look forward to your blessings &amp; presence
+            </p>
+          </div>
+
+          <div class="gold-divider" style="margin-top: 36px;">
+            <div class="diamond"></div>
+          </div>
+
+          <!-- Footer Credit -->
+          <div style="margin-top: 24px; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(232, 216, 181, 0.45);">
+            The Nikah Experience • 2026 • Barakah &amp; Peace
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       FLOATING MUSIC PLAYER
+       ════════════════════════════════════════════════════════════ -->
+  <div id="music-player-wrap">
+    <!-- Controls Popover -->
+    <div class="music-controls-panel" id="music-controls">
+      <button class="btn-panel-action" id="mute-btn" aria-label="Mute or unmute">
+        <svg id="mute-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        </svg>
+        <span id="mute-text">Mute</span>
+      </button>
+
+      <input type="range" min="0" max="1" step="0.05" value="0.5" class="volume-slider" id="volume-slider" aria-label="Volume slider" />
+
+      <p style="font-size: 11px; color: rgba(232, 216, 181, 0.7); text-align: center;" id="music-status-text">
+        Music Paused
+      </p>
+    </div>
+
+    <!-- Buttons Row -->
+    <div class="music-buttons-row">
+      <button class="btn-music-toggle-panel" id="toggle-panel-btn" aria-label="Music Settings">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18V5l12-2v13"></path>
+          <circle cx="6" cy="18" r="3"></circle>
+          <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+      </button>
+
+      <button class="btn-music-main" id="music-main-btn" aria-label="Play or Pause background music">
+        <div class="ring"></div>
+        <!-- Play SVG Icon -->
+        <svg id="play-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 2px;">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+        <!-- Pause SVG Icon -->
+        <svg id="pause-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+          <rect x="6" y="4" width="4" height="16"></rect>
+          <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Feedback -->
+  <div id="toast">Invitation Link Copied!</div>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       VANILLA JAVASCRIPT: INTERACTIONS, AUDIO, 3D TILT, COUNTDOWN
+       ════════════════════════════════════════════════════════════ -->
+  <script>
+    (function () {
+      "use strict";
+
+      // ─── Wedding Data Configuration ──────────────────────────
+      const WEDDING_DATA = {
+        bride: "Ashik",
+        groom: "Iza",
+        nikahDateStr: "2026-11-28T15:30:00",
+        timezone: "Asia/Kolkata",
+        websiteUrl: window.location.href,
+        whatsappMessage: "You are cordially invited to celebrate the Nikah of Ashik and Iza on Saturday, 28th November 2026 at 3:30 PM. View invitation: " + window.location.href
+      };
+
+      // ─── 1. Golden Particles Background Canvas ───────────────
+      const canvas = document.getElementById("particles-canvas");
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+      let animFrameId = null;
+      let width = 0;
+      let height = 0;
+
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      function initParticles() {
+        resizeCanvas();
+        particles = [];
+        const count = 35;
+        const rand = (min, max) => Math.random() * (max - min) + min;
+
+        for (let i = 0; i < count; i++) {
+          particles.push({
+            x: rand(0, width),
+            y: rand(0, height),
+            r: rand(1.2, 3.2),
+            opacity: rand(0.15, 0.65),
+            vx: rand(-0.15, 0.15),
+            vy: rand(-0.25, -0.05),
+            wobbleSpeed: rand(0.003, 0.008),
+            wobbleAmp: rand(0.3, 1),
+            pulseSpeed: rand(0.015, 0.03),
+            phase: rand(0, Math.PI * 2)
+          });
+        }
+      }
+
+      let tick = 0;
+      function renderParticles() {
+        tick++;
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
+          p.x += p.vx + Math.sin(tick * p.wobbleSpeed + p.phase) * p.wobbleAmp * 0.3;
+          p.y += p.vy;
+
+          if (p.y < -10) { p.y = height + 10; p.x = Math.random() * width; }
+          if (p.x < -10) p.x = width + 10;
+          if (p.x > width + 10) p.x = -10;
+
+          const pulse = Math.sin(tick * p.pulseSpeed + p.phase) * 0.15;
+          const alpha = Math.max(0.05, Math.min(0.85, p.opacity + pulse));
+
+          const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 2.8);
+          grad.addColorStop(0, "rgba(214, 181, 109, " + alpha + ")");
+          grad.addColorStop(0.5, "rgba(214, 181, 109, " + (alpha * 0.3) + ")");
+          grad.addColorStop(1, "rgba(214, 181, 109, 0)");
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r * 2.8, 0, Math.PI * 2);
+          ctx.fillStyle = grad;
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(255, 240, 176, " + alpha + ")";
+          ctx.fill();
+        }
+
+        animFrameId = requestAnimationFrame(renderParticles);
+      }
+
+      window.addEventListener("resize", () => {
+        resizeCanvas();
+      });
+
+      initParticles();
+      renderParticles();
+
+
+      // ─── 2. 3D Interactive Envelope Unfolding Sequence ───────
+      const overlay = document.getElementById("envelope-overlay");
+      const envelopeBox = document.getElementById("envelope-box");
+      const envelopeFlap = document.getElementById("envelope-flap");
+      const envelopeCard = document.getElementById("envelope-card");
+      const envelopeShadow = document.getElementById("envelope-shadow");
+      const waxSeal = document.getElementById("wax-seal");
+      const openBtn = document.getElementById("open-btn");
+      const skipBtn = document.getElementById("skip-btn");
+      const actionWrap = document.getElementById("envelope-action");
+      const statusMsg = document.getElementById("envelope-status");
+      const mainContent = document.getElementById("main-content");
+
+      let isOpened = false;
+
+      // Mouse & Touch 3D Tilt
+      function handleTilt(clientX, clientY) {
+        if (isOpened) return;
+        const rect = overlay.getBoundingClientRect();
+        const x = (clientX - rect.left) / rect.width - 0.5;
+        const y = (clientY - rect.top) / rect.height - 0.5;
+        const rotateY = x * 14;
+        const rotateX = -y * 14;
+        envelopeBox.style.transform = "rotateY(" + rotateY + "deg) rotateX(" + rotateX + "deg)";
+      }
+
+      overlay.addEventListener("mousemove", (e) => {
+        handleTilt(e.clientX, e.clientY);
+      });
+
+      overlay.addEventListener("touchmove", (e) => {
+        if (e.touches.length > 0) {
+          handleTilt(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      }, { passive: true });
+
+      overlay.addEventListener("mouseleave", () => {
+        if (!isOpened) {
+          envelopeBox.style.transform = "rotateY(0deg) rotateX(0deg)";
+        }
+      });
+
+      // Opening Animation Sequence
+      function startOpenSequence() {
+        if (isOpened) return;
+        isOpened = true;
+
+        actionWrap.classList.add("hide-action");
+        statusMsg.textContent = "Unsealing your invitation…";
+        envelopeBox.style.transform = "rotateY(0deg) rotateX(0deg)";
+
+        // Step 1: Break Wax Seal
+        waxSeal.classList.add("broken");
+
+        // Try playing background music automatically after user interaction
+        attemptAudioPlay();
+
+        // Step 2: Open Top Flap
+        setTimeout(() => {
+          envelopeFlap.classList.add("open");
+          statusMsg.textContent = "Your invitation awaits…";
+
+          // Step 3: Slide Card Out
+          setTimeout(() => {
+            envelopeCard.classList.add("slid-out");
+            envelopeShadow.style.transform = "scale(1.15) translateY(12px)";
+            statusMsg.textContent = "Welcome to The Nikah Experience";
+
+            // Step 4: Fade to Main Website
+            setTimeout(() => {
+              finishOpening();
+            }, 1800);
+
+          }, 450);
+
+        }, 550);
+      }
+
+      function finishOpening() {
+        overlay.classList.add("hide-envelope");
+        mainContent.classList.add("visible");
+        if (animFrameId) {
+          cancelAnimationFrame(animFrameId);
+        }
+      }
+
+      waxSeal.addEventListener("click", startOpenSequence);
+      openBtn.addEventListener("click", startOpenSequence);
+      skipBtn.addEventListener("click", () => {
+        attemptAudioPlay();
+        finishOpening();
+      });
+
+
+      // ─── 3. Background Music Player ──────────────────────────
+      const audio = document.getElementById("wedding-audio");
+      const musicMainBtn = document.getElementById("music-main-btn");
+      const togglePanelBtn = document.getElementById("toggle-panel-btn");
+      const controlsPanel = document.getElementById("music-controls");
+      const playIcon = document.getElementById("play-icon");
+      const pauseIcon = document.getElementById("pause-icon");
+      const muteBtn = document.getElementById("mute-btn");
+      const muteIcon = document.getElementById("mute-icon");
+      const muteText = document.getElementById("mute-text");
+      const volumeSlider = document.getElementById("volume-slider");
+      const musicStatusText = document.getElementById("music-status-text");
+
+      audio.volume = 0.5;
+      let isPlaying = false;
+
+      function attemptAudioPlay() {
+        if (!isPlaying) {
+          audio.play().then(() => {
+            setPlayState(true);
+          }).catch(() => {
+            // Browser autoplay policy might require direct button click
+          });
+        }
+      }
+
+      function setPlayState(playing) {
+        isPlaying = playing;
+        if (playing) {
+          musicMainBtn.classList.add("playing");
+          playIcon.style.display = "none";
+          pauseIcon.style.display = "block";
+          musicStatusText.textContent = "♪ Now Playing";
+        } else {
+          musicMainBtn.classList.remove("playing");
+          playIcon.style.display = "block";
+          pauseIcon.style.display = "none";
+          musicStatusText.textContent = "Music Paused";
+        }
+      }
+
+      musicMainBtn.addEventListener("click", () => {
+        if (isPlaying) {
+          audio.pause();
+          setPlayState(false);
+        } else {
+          audio.play().then(() => {
+            setPlayState(true);
+          }).catch((err) => console.log("Audio play error:", err));
+        }
+      });
+
+      togglePanelBtn.addEventListener("click", () => {
+        controlsPanel.classList.toggle("show");
+      });
+
+      // Close controls panel when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!document.getElementById("music-player-wrap").contains(e.target)) {
+          controlsPanel.classList.remove("show");
+        }
+      });
+
+      muteBtn.addEventListener("click", () => {
+        audio.muted = !audio.muted;
+        if (audio.muted) {
+          muteText.textContent = "Unmute";
+          muteIcon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line>';
+        } else {
+          muteText.textContent = "Mute";
+          muteIcon.innerHTML = '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>';
+        }
+      });
+
+      volumeSlider.addEventListener("input", (e) => {
+        const val = parseFloat(e.target.value);
+        audio.volume = val;
+        if (audio.muted && val > 0) {
+          audio.muted = false;
+          muteText.textContent = "Mute";
+        }
+      });
+
+
+      // ─── 4. Live Wedding Countdown Timer ─────────────────────
+      const cdDays = document.getElementById("cd-days");
+      const cdHours = document.getElementById("cd-hours");
+      const cdMinutes = document.getElementById("cd-minutes");
+      const cdSeconds = document.getElementById("cd-seconds");
+      const targetTimeMs = new Date("2026-11-28T15:30:00+05:30").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = targetTimeMs - now;
+
+        if (diff <= 0) {
+          cdDays.textContent = "00";
+          cdHours.textContent = "00";
+          cdMinutes.textContent = "00";
+          cdSeconds.textContent = "00";
+          document.getElementById("countdown-grid").innerHTML = `
+            <div style="grid-column: 1 / -1; padding: 20px;">
+              <h3 class="font-serif gold-text" style="font-size: 2.2rem;">The Nikah Day is Here!</h3>
+            </div>
+          `;
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        cdDays.textContent = String(days).padStart(2, "0");
+        cdHours.textContent = String(hours).padStart(2, "0");
+        cdMinutes.textContent = String(minutes).padStart(2, "0");
+        cdSeconds.textContent = String(seconds).padStart(2, "0");
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+
+      // ─── 5. Timeline Scroll Progress & Reveal Animations ─────
+      const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+      const timelineWrap = document.getElementById("timeline-wrap");
+      const timelineProgress = document.getElementById("timeline-progress");
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px"
+      });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // Timeline line progress on scroll
+      window.addEventListener("scroll", () => {
+        if (!timelineWrap || !timelineProgress) return;
+        const rect = timelineWrap.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight && rect.bottom > 0) {
+          const totalDistance = rect.height;
+          const currentProgress = Math.max(0, Math.min(totalDistance, windowHeight - rect.top - 100));
+          const percentage = (currentProgress / totalDistance) * 100;
+          timelineProgress.style.height = Math.min(100, Math.max(0, percentage)) + "%";
+        }
+      }, { passive: true });
+
+
+      // ─── 6. Sharing & Calendar Helper Utilities ──────────────
+      window.showToast = function (message) {
+        const toast = document.getElementById("toast");
+        toast.textContent = message;
+        toast.classList.add("show");
+        setTimeout(() => toast.classList.remove("show"), 2500);
+      };
+
+      window.copyLink = function () {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(WEDDING_DATA.websiteUrl).then(() => {
+            window.showToast("Invitation Link Copied!");
+          });
+        }
+      };
+
+      window.shareWhatsApp = function () {
+        const url = "https://wa.me/?text=" + encodeURIComponent(WEDDING_DATA.whatsappMessage);
+        window.open(url, "_blank");
+      };
+
+      window.downloadICS = function () {
+        const icsContent = [
+          "BEGIN:VCALENDAR",
+          "VERSION:2.0",
+          "PRODID:-//The Nikah Experience//EN",
+          "CALSCALE:GREGORIAN",
+          "METHOD:PUBLISH",
+          "BEGIN:VEVENT",
+          "DTSTART;TZID=Asia/Kolkata:20261128T153000",
+          "DTEND;TZID=Asia/Kolkata:20261128T180000",
+          "SUMMARY:Nikah Ceremony - Ashik & Iza",
+          "DESCRIPTION:You are cordially invited to celebrate the Nikah of Ashik and Iza.",
+          "LOCATION:Nikah Ceremony Venue",
+          "STATUS:CONFIRMED",
+          "END:VEVENT",
+          "BEGIN:VEVENT",
+          "DTSTART;TZID=Asia/Kolkata:20261129T123000",
+          "DTEND;TZID=Asia/Kolkata:20261129T160000",
+          "SUMMARY:Wedding Reception - Ashik & Iza",
+          "DESCRIPTION:Celebration and feast at Groom's Residence.",
+          "LOCATION:At Groom's Residence",
+          "STATUS:CONFIRMED",
+          "END:VEVENT",
+          "END:VCALENDAR"
+        ].join("\r\n");
+
+        const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "Nikah_Ashik_Iza.ics";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      };
+
+    })();
+  </script>
+</body>
+</html>
+
