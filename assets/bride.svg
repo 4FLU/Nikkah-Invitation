@@ -1,0 +1,19 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B5142" />
+      <stop offset="100%" stop-color="#073D32" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D6B56D" />
+      <stop offset="100%" stop-color="#926D21" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" />
+  <circle cx="200" cy="200" r="170" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.6" />
+  <circle cx="200" cy="200" r="160" fill="none" stroke="url(#gold)" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+  <text x="200" y="225" font-family="'Playfair Display', serif" font-size="90" font-weight="bold" fill="url(#gold)" text-anchor="middle">A</text>
+  <text x="200" y="275" font-family="'Playfair Display', serif" font-size="20" letter-spacing="4" fill="#E8D8B5" opacity="0.8" text-anchor="middle">ASHIK</text>
+</svg>
+
