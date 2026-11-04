@@ -1,22 +1,21 @@
-<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
- <defs>
-  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="bg">
-   <stop stop-color="#073D32" offset="0%"/>
-   <stop stop-color="#0B5142" offset="50%"/>
-   <stop stop-color="#052B23" offset="100%"/>
-  </linearGradient>
-  <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="gold">
-   <stop stop-color="#FDE68A" offset="0%"/>
-   <stop stop-color="#D6B56D" offset="50%"/>
-   <stop stop-color="#926D21" offset="100%"/>
-  </linearGradient>
- </defs>
- <g>
-  <title>Layer 1</title>
-  <rect id="svg_1" fill="url(#bg)" height="500" width="800"/>
-  <rect id="svg_2" opacity="0.6" stroke-width="1.5" stroke="url(#gold)" fill="none" rx="8" height="460" width="760" y="20" x="20"/>
-  <rect id="svg_3" opacity="0.4" stroke-dasharray="6,4" stroke-width="0.75" stroke="url(#gold)" fill="none" rx="6" height="440" width="740" y="30" x="30"/>
-  <text style="cursor: move;" stroke-width="0" transform="matrix(0.771016 0 0 0.989329 210.379 6.30572)" stroke="null" id="svg_4" text-anchor="middle" fill="url(#gold)" font-weight="bold" font-size="52" font-family="'Playfair Display', serif" y="234.94323" x="248.89544">Muhammad Ashique &amp; Iza Fathima</text>
-  <text transform="matrix(1.05559 0 0 1.18762 -27.7421 -46.7377)" stroke="null" id="svg_5" text-anchor="middle" opacity="0.85" fill="#E8D8B5" font-size="28" font-family="'Amiri', serif" y="280" x="400">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</text>
- </g>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#073D32" />
+      <stop offset="50%" stop-color="#0B5142" />
+      <stop offset="100%" stop-color="#052B23" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D6B56D" />
+      <stop offset="100%" stop-color="#926D21" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" />
+  <rect x="20" y="20" width="760" height="460" rx="8" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.6" />
+  <rect x="30" y="30" width="740" height="440" rx="6" fill="none" stroke="url(#gold)" stroke-width="0.75" stroke-dasharray="6,4" opacity="0.4" />
+  <text x="400" y="230" font-family="'Playfair Display', serif" font-size="52" font-weight="bold" fill="url(#gold)" text-anchor="middle">Ashik &amp; Iza</text>
+  <text x="400" y="280" font-family="'Amiri', serif" font-size="28" fill="#E8D8B5" opacity="0.85" text-anchor="middle">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</text>
+  <text x="400" y="340" font-family="'Playfair Display', serif" font-size="16" letter-spacing="6" fill="#D6B56D" opacity="0.7" text-anchor="middle">THE NIKAH EXPERIENCE • 2026</text>
 </svg>
+
